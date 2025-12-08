@@ -38,7 +38,9 @@ void djikstra(Vertex* vertex, int start, int n) {
                 minDistant = roads_to_points[j].distance;
             }
         }
-        if (minID == -1 || minDistant == 99999999) break;
+        if (minID == -1 || minDistant == 99999999){
+            break;
+        }
         roads_to_points[minID].final = true;
         update_neighbours(vertex, minID, roads_to_points, roads_to_points[minID].distance);
     }
