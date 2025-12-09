@@ -15,9 +15,9 @@ void print_road(Vertex* vertex, Fastest* roads_to_points, int destination, int s
     }
     path[count] = start;
 
-    printf("Start: %d ", start);
+    printf("Droga: %d", start);
     for (int i = count - 1; i >= 0; i--) {
-        printf(" --[%s]--> (%d) ", names[i], path[i]);
+        printf(" --[%s]--> (%d)", names[i], path[i]);
     }
 }
 
@@ -72,7 +72,7 @@ void dijkstra(Vertex* vertex, int start, int n) {
         if (roads_to_points[i].distance == 99999999) {
             printf("Brak drogi do miasta %i\n", i);
         } else {
-            printf("Dystans do %i to jedynie %.2lf ", i, roads_to_points[i].distance);
+            printf("Dystans do %i to jedynie %.2lf\t", i, roads_to_points[i].distance);
             print_road(vertex, roads_to_points, i, start);
             printf("\n");
         }
