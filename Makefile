@@ -1,5 +1,5 @@
 CC = gcc
-CFLAGS = -Wall -g
+CFLAGS = -Wall -g -fsanitize=address
 
 # Nazwa pliku wynikowego (programu)
 TARGET = main

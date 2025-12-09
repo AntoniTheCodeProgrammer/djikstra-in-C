@@ -96,3 +96,27 @@ void print_result(Vertex* vertex, int start, int end, int n){
         printf("\n");
     }
 }
+
+void free_road(Road *road){
+    if(road == NULL){
+        return;
+    }
+    if(road->next != NULL){
+        free_road(road->next);
+    }
+    free(road->name);
+    free(road);
+}
+
+void all_free(Vertex *vertex){
+    Vertex *current = vertex;
+    while(current != NULL){
+        Vertex *to_free = current;
+        current = current->next;
+        free_road(to_free->road);
+        free(to_free);
+    }
+    free(current);
+    free(roads_to_points);
+    roads_to_points = NULL;
+}

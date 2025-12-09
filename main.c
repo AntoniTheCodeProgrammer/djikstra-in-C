@@ -25,5 +25,6 @@ int main(int argc, char **argv) {
     // print_results(vertex, start, n);
     // printf("\n");
     print_result(vertex, start, end, n);
+    all_free(vertex);
     return 0;
 }
