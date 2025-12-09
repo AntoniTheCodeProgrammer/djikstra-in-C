@@ -6,7 +6,7 @@
 
 int main() {
     Vertex* vertex = NULL;
-    if (create_Vertex(&vertex, "tests/test4.txt") != 0) {
+    if (create_Vertex(&vertex, "tests/test5.txt") != 0) {
         return 1;
     }
     int n = lenght_of_vertex(vertex);
