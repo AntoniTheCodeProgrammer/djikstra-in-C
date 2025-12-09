@@ -6,7 +6,7 @@
 
 int main() {
     Vertex* vertex = NULL;
-    if (create_Vertex(&vertex, "tests/test0.txt") != 0) {
+    if (create_Vertex(&vertex, "tests/test6.txt") != 0) {
         return 1;
     }
     

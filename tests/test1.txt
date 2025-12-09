@@ -1,7 +1,6 @@
-3 3
-0 1 10
-0 2 5
-2 1 2
+0 1 10 autostrada
+0 2 5 skrot
+2 1 2 lacznik
 
 Dystans do 0 to: 0
 Dystans do 1 to: 7

@@ -1,11 +1,10 @@
-5 7
-0 1 10
-0 4 3
-1 2 2
-4 1 4
-4 2 8
-4 3 2
-2 3 9
+0 1 10 trasaA
+0 4 3 trasaB
+1 2 2 zaulek
+4 1 4 obwodnica
+4 2 8 dluga
+4 3 2 szybka
+2 3 9 wolna
 
 Dystans do 0 to: 0
 Dystans do 1 to: 7

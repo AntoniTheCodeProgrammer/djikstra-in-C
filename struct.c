@@ -60,7 +60,7 @@ void print_vertex(Vertex* vertex) {
         Road* current_Road = current_Vertex->road;
         int roads = 0;
         while (current_Road != NULL) {
-            printf("[%d via \"%s\" (weight: %f)] ", current_Road->directionID, current_Road->name, current_Road->weight);
+            printf("[%d via \"%s\" (weight: %.2f)] ", current_Road->directionID, current_Road->name, current_Road->weight);
             current_Road = current_Road->next;
             roads++;
         }
